@@ -1,0 +1,23 @@
+<h1>Results you scored : {{ point }} / {{ questions.length }}</h1>
+<div *ngFor="let question of questions" class="question-container">
+  <div class="container">
+    <h3>{{ question.id }}. {{ question.question }}</h3>
+    
+    <div class="{{ getResult(userAnswers[question.id], question.answer,question.questionType) }}">
+    <div [ngSwitch]="question.questionType">
+      <ng-template [ngSwitchCase]="questionTypeEnum.imageBasedChoice">
+        <b>Your answer :</b>
+        <img [src]="userAnswers[question.id]"/><br /><br />
+        <b>Correct answer :</b>
+        <img [src]="question.answer"/>
+      </ng-template>
+       <div *ngSwitchDefault>
+          <b
+            >Your answer: {{ userAnswers[question.id] }} <br /><br />
+            Correct answer: {{ question.answer }}</b>
+       </div>
+    </div>
+  </div>
+  </div>
+</div>
+<button mat-flat-button color="primary" routerLink="/">Go to HomePage</button>
