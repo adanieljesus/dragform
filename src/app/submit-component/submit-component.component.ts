@@ -21,7 +21,7 @@ export class SubmitComponentComponent implements OnInit {
     });
   }
   getResult(userAnswer: any, answer: any,questionType:any) {
-    if (questionType==this.questionTypeEnum.multipleChoice && userAnswer?answer.filter((element:any) => userAnswer.includes(element)):userAnswer == answer) {
+    if (questionType==this.questionTypeEnum.multipleChoice && userAnswer? userAnswer.length==answer.length &&  answer.filter((element:any) => userAnswer.includes(element)):userAnswer == answer+'') {
       this.point++;
       return 'correct';
     } else {

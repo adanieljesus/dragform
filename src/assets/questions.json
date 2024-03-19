@@ -14,15 +14,15 @@
     },
     {
       "id": 2,
-      "question": "How can you generate a new service using Angular CLI?",
-      "questionType":1,
+      "question": "How can you generate a new component using Angular CLI?",
+      "questionType":4,
       "options": [
-        "ng create service my-service",
-        "ng generate service my-service",
-        "ng new service my-service",
-        "ng add service my-service"
+        "assets/createComponent2.png",
+        "assets/createComponent1.png",
+        "assets/createComponent4.png",
+        "assets/createComponent3.png"
       ],
-      "answer": "ng generate service my-service"
+      "answer": "assets/createComponent1.png"
     },
     {
       "id": 3,
@@ -34,7 +34,7 @@
         "ngDoCheck()",
         "constructor()"
       ],
-      "answer": ["constructor()","ngOnChange()","ngOnInit()","ngDoCheck()"]
+      "answer":["constructor()","ngOnChange()","ngOnInit()","ngDoCheck()"]
     },
     {
       "id": 4,
@@ -59,12 +59,12 @@
       "id": 6,
       "question": "'npm install -g @angular/cli' is used to install Angular CLI globally?",
       "questionType":3,
-      "answer": true
+      "answer": "true"
     },
     {
       "id": 7,
       "question": "How do you define a route in Angular?",
-      "questionType":4,
+      "questionType":1,
       "options": [
         "Using <a> tags",
         "Using the Router service",
@@ -87,15 +87,15 @@
     },
     {
       "id": 9,
-      "question": "selected a prime number?",
+      "question": "Select a prime numbers?",
       "questionType":2,
       "options": [
-        "five",
-        "seven",
+        "three",
         "nine",
-        "three"
+        "five",
+        "seven"
       ],
-      "answer": ["five","seven","three"]
+      "answer": ["three", "five","seven"]
     },
     {
       "id": 10,
@@ -103,15 +103,39 @@
       "questionType":2,
       "options": [
         "cakes and biscuits",
-        "fast food",
-        "vegitables",
-        "fruits"
+        "fastfoods",
+        "fruits",
+        "vegetables"
       ],
       "answer": [
         "cakes and biscuits",
-        "fast food"
+        "fastfood"
         
       ]
+    },    
+    {
+      "id": 11,
+      "question": "How can you generate a new service using Angular CLI?",
+      "questionType":1,
+      "options": [
+        "ng create service my-service",
+        "ng generate service my-service",
+        "ng new service my-service",
+        "ng add service my-service"
+      ],
+      "answer": "ng generate service my-service"
+    },
+    {
+      "id": 12,
+      "question": "How can you generate a new service using Angular CLI?",
+      "questionType":1,
+      "options": [
+        "ng create service my-service",
+        "ng generate service my-service",
+        "ng new service my-service",
+        "ng add service my-service"
+      ],
+      "answer": "ng generate service my-service"
     }
   ]
 }
