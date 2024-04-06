@@ -23,8 +23,8 @@
                 </ng-template>
                  <ng-template [ngSwitchCase]="questionTypeEnum.trueOrfalseChoice">
                   <div class="d-flex mt-3">
-                    <button type="button" style="padding: 10px;width: 6rem;text-align: center;display: block;" (click)="this.userAnswers[questions[currentQuestionNo].id]=true" class="{{this.userAnswers[questions[currentQuestionNo].id]==true?'btn btn-primary':'btn btn-secondary'}}">True</button>
-                    <button type="button" style="padding: 10px; width: 6rem;margin-left:10px;text-align: center;display: block;" (click)="this.userAnswers[questions[currentQuestionNo].id]=false" class="{{this.userAnswers[questions[currentQuestionNo].id]==false?'btn btn-primary':'btn btn-secondary'}}">False</button>
+                    <button type="button" style="padding: 10px;width: 6rem;text-align: center;display: block;" (click)="this.userAnswers[questions[currentQuestionNo].id]='true'" class="{{this.userAnswers[questions[currentQuestionNo].id]=='true'?'btn btn-primary':'btn btn-secondary'}}">True</button>
+                    <button type="button" style="padding: 10px; width: 6rem;margin-left:10px;text-align: center;display: block;" (click)="this.userAnswers[questions[currentQuestionNo].id]='false'" class="{{this.userAnswers[questions[currentQuestionNo].id]=='false'?'btn btn-primary':'btn btn-secondary'}}">False</button>
                   </div>
                 </ng-template>
                  <ng-template [ngSwitchCase]="questionTypeEnum.imageBasedChoice">
